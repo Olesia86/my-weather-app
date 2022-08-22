@@ -153,3 +153,6 @@ h4 {
   color: rgb(59, 59, 3);
 }
 
+.small {
+  display: block;
+}
