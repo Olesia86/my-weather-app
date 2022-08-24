@@ -42,18 +42,9 @@ function showWeather(response) {
 }
 
 
-function getCurrentPosition(position) {
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiKey = "49299905f177ecc5c9f1da6f89238e56";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
-axios.get(apiUrl).then(showWeather);
-}
 
-function searchButton(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(getCurrentPosition);
-}
+
+
 let button = document.querySelector("#current-loc");
 button.addEventListener("click", searchButton);
  
