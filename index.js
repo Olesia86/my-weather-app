@@ -24,6 +24,7 @@ let searchForm = document.querySelector("button");
 searchForm.addEventListener("click", submitBtn);
 
 function showWeather(response) {
+  console.log(response.data);
 
   let temperature = Math.round(response.data.main.temp);
   let description = response.data.weather[0].description;
