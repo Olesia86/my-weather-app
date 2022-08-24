@@ -19,6 +19,7 @@ function search(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
 }
+console.log(apiUrl);
 
 let searchForm = document.querySelector("button");
 searchForm.addEventListener("click", submitBtn);
@@ -41,7 +42,7 @@ function showWeather(response) {
   h2.innerHTML = response.data.name;
   let iconElement = document.querySelector("#weatherIcon");
   iconElement.setAttribute(
-    "src", `http://openweathermap.org/img/wn/${responce.data.weather[0].icon}@2x.png`
+    "src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 
