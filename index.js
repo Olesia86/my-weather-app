@@ -45,7 +45,6 @@ function showWeather(response) {
 
 
 
-let button = document.querySelector("#current-loc");
-button.addEventListener("click", searchButton);
+
  
  search("London");
