@@ -40,7 +40,7 @@ function showWeather(response) {
   windElement.innerHTML = `Wind speed: ${wind} mph`
   let h2 = document.querySelector("h2");
   h2.innerHTML = response.data.name;
-  let iconElement = document.querySelector("#weatherIcon");
+  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
