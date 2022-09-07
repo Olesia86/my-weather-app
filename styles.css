@@ -1,82 +1,89 @@
 .container {
-  max-width: 900px;
-  height: 105vh;
+  max-width: 750px;
+  height: 100vh;
   margin: 0 auto;
   padding: 0 auto;
   border: none;
   border-radius: 20px;
   box-shadow: 0 5px 15px;
   font-family: fantasy;
+  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(238, 234, 234);
+  background-image: url("src/pic2.png");
 }
-.container:hover {
-  opacity: 0.8;
-  transition: 0.2s ease-in-out;
-  background-color: rgb(137, 162, 162);
-}
+
 .card-title {
-  color: black;
+  color: rgb(238, 234, 234);
 }
 
 .card-text {
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
-  color: black;
-}
-.row {
-  color: rgba(10, 0, 0, 0.488);
+  color: rgb(238, 234, 234);
 
-  }
+}
+
+.row {
+  display: flex;
+  color: rgba(10, 0, 0, 0.488);
+  margin-left: -10px;
+ }
 .temp {
   position: relative;
   left: 10px;
   bottom: 15px;
+  color: rgb(238, 234, 234);
 }
-.weather-icon {
+img {
   position: relative;
   color: rgb(10, 79, 93);
   font-size: 30px;
   left: 15px;
   font-size: 45px;
-  bottom: 13px;
-  transition: 0.2s ease-in-out;
+  bottom: 30px;
+  width: 42px;
   }
-  .weather-icon:hover{
-    color: rgb(225, 225, 14);
+  #icon {
+    width: 100px;
   }
+
 h5 {
 position: relative;
 left: 550px;
-bottom: 100px;
+bottom: 120px;
 font-size: 30px;
+line-height: 1;
 margin: 0;
 padding: 0;
 }
 .description {
   position: relative;
   left: 550px;
-  bottom: 95px;
+  bottom: 110px;
   font-size: 13px;
 }
 .humidity {
   position: relative;
   left: 30px;
   bottom: 160px;
-  font-size: 20px;
-  color: rgb(119, 62, 6);
+  font-size: 18px;
+  color: rgb(140, 140, 140);
 }
 .rain {
   position: relative;
   left: 30px;
   bottom: 160px;
-  font-size: 20px;
-  color: rgb(119, 62, 6);
+  font-size: 18px;
+  color: rgb(140, 140, 140);
 }
 .wind {
   position: relative;
   left: 30px;
   bottom: 160px;
-  font-size: 20px;
-  color: rgb(119, 62, 6);
+  font-size: 18px;
+  color: rgb(140, 140, 140);
 }
 .search {
   display: flex;
@@ -98,16 +105,6 @@ button:hover {
   opacity: 0.9;
   box-shadow: 0 5px 15px;
 }
-#current-loc {
-    background-color: rgb(50, 79, 79);
-    display: flex;
-    border-radius: 10px;
-    color: aliceblue;
-    font-size: small;
-    border: none;
-    outline: none;
-
-    }
 .search-bar {
 border-radius: 18px;
 padding: 0.7rem;
@@ -125,8 +122,9 @@ h1 {
   color: rgb(225, 225, 14);
   padding: 0;
   position: relative;
-  left: 350px;
-  font-size: 120px;
+  left: 400px;
+  font-size: 150px;
+  line-height: 1;
   margin: 0;
 } 
 .units {
@@ -140,15 +138,9 @@ h2 {
 }
 h3 {
   position: relative;
-  font-size: 15px;
+  font-size: 12px;
   left: 70px;
   bottom: 13px;
 }
-h4 {
-  position: relative;
-  font-size: 18px;
-  font-weight: lighter;
-  left: 3px;
-  bottom: 10px;
-  color: rgb(238, 234, 234);
-}
+
+
