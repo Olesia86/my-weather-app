@@ -21,19 +21,23 @@ function showForecast(response) {
   <img src="src/icon-cloudy.png"
   alt=""
   width="50"/>
+    
     </div>
-    </div>`;
+    </div>
+  
+  `;
   });
 
 forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 function getForecast(coordinates){
-  let apiKey = "49299905f177ecc5c9f1da6f89238e56";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKey = "c95d60a1e3adbeb286133f1ebebc2579"
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates}&lon=${coordinates}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl). then(showForecast);
+  console.log(apiUrl);
 } 
-getForecast(response.data.coord);
+getForecast();
 
   function submitBtn(event) {
   event.preventDefault();
@@ -50,7 +54,7 @@ let searchForm = document.querySelector("button");
 searchForm.addEventListener("click", submitBtn);
 
 function showWeather(response) {
-
+  console.log(response.data);
 
   let temperature = Math.round(response.data.main.temp);
   let description = response.data.weather[0].description;
