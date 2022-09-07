@@ -7,7 +7,37 @@ let day = days[now.getDay()];
 let months = ["January", "Febriary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
+function showForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let forecastHTML = `<div class="row"/>`;
+  days.forEach(function (day) {
+    forecastHTML = forecastHTML + `
+  <div class="col-2">
+  <div class="card-body">
+<h6 class="card-title">${day}</h6>
+    <p class="temp">23°C</p>
+  <img src="src/icon-cloudy.png"
+  alt=""
+  width="50"/>
+    
+    </div>
+    </div>
   
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+function getForecast(coordinates){
+  let apiKey = "49299905f177ecc5c9f1da6f89238e56";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates}&lon=${coordinates}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl). then(showForecast);
+  console.log(apiUrl);
+} 
+getForecast();
+
 
   function submitBtn(event) {
   event.preventDefault();
@@ -46,3 +76,4 @@ function showWeather(response) {
   );
 }
 search("London");
+showForecast();
