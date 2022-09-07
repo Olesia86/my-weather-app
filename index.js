@@ -18,7 +18,7 @@ function showForecast(response) {
   <div class="card-body">
 <h6 class="card-title">${day}</h6>
     <p class="temp">23°C</p>
-  <img src="icon-cloudy.png"
+  <img src="src/icon-cloudy.png"
   alt=""
   width="50"/>
     
