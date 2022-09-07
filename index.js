@@ -21,11 +21,8 @@ function showForecast(response) {
   <img src="src/icon-cloudy.png"
   alt=""
   width="50"/>
-    
     </div>
-    </div>
-  
-  `;
+    </div>`;
   });
 
 forecastHTML = forecastHTML + `</div>`;
