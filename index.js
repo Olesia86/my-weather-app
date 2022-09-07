@@ -8,36 +8,6 @@ let months = ["January", "Febriary", "March", "April", "May", "June", "July", "A
 let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
   
-function showForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  let forecastHTML = `<div class="row"/>`;
-  days.forEach(function (day) {
-  forecastHTML = forecastHTML + `
-  <div class="col-2">
-  <div class="card-body">
-<h6 class="card-title">${day}</h6>
-    <p class="temp">23°C</p>
-  <img src="src/icon-cloudy.png"
-  alt=""
-  width="50"/>
-    
-    </div>
-    </div>
-  
-  `;
-  });
-
-forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-}
-function getForecast(coordinates){
-  let apiKey = "c95d60a1e3adbeb286133f1ebebc2579"
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates}&lon=${coordinates}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl). then(showForecast);
-  console.log(apiUrl);
-} 
-getForecast();
 
   function submitBtn(event) {
   event.preventDefault();
@@ -54,7 +24,7 @@ let searchForm = document.querySelector("button");
 searchForm.addEventListener("click", submitBtn);
 
 function showWeather(response) {
-  console.log(response.data);
+
 
   let temperature = Math.round(response.data.main.temp);
   let description = response.data.weather[0].description;
@@ -76,4 +46,3 @@ function showWeather(response) {
   );
 }
 search("London");
-showForecast();
