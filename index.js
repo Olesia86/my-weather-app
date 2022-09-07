@@ -37,7 +37,7 @@ function getForecast(coordinates){
   axios.get(apiUrl). then(showForecast);
   console.log(apiUrl);
 } 
-getForecast(response.data.coord);
+getForecast();
 
 
   function submitBtn(event) {
