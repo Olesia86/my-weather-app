@@ -7,6 +7,7 @@ let day = days[now.getDay()];
 let months = ["January", "Febriary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
+
 function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -17,7 +18,7 @@ function showForecast(response) {
   <div class="card-body">
 <h6 class="card-title">${day}</h6>
     <p class="temp">23°C</p>
-  <img src="src/icon-cloudy.png"
+  <img src="icon-cloudy.png"
   alt=""
   width="50"/>
     
