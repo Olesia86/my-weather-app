@@ -9,16 +9,16 @@ let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
 
 function showForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let forecastHTML = `<div class="row"/>`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
-<h6 class="card-title">${day}</h6>
-    <p class="temp">23°C</p>
-  <img src="src/icon-cloudy.png"
+  <h6 class="card-title">${forecast.dt}</h6>
+  <p class="temp">${forecast.temp}°C</p>
+  <img src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png/>"
   alt=""
   width="50"/>
     </div>
