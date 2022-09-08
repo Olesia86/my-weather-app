@@ -21,26 +21,23 @@ function showForecast(response) {
   <img src="src/icon-cloudy.png"
   alt=""
   width="50"/>
-    
     </div>
-    </div>
-  
-  `;
+    </div>`;
   });
-
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+showForecast();
+
 function getForecast(coordinates){
   let apiKey = "49299905f177ecc5c9f1da6f89238e56";
   let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl). then(showForecast);
   console.log(apiUrl);
 } 
-getForecast();
+getForecast(response.data.coord);
 
-
-  function submitBtn(event) {
+ function submitBtn(event) {
   event.preventDefault();
   let city = document.querySelector(".search-bar").value;
   search(city);
@@ -55,9 +52,7 @@ let searchForm = document.querySelector("button");
 searchForm.addEventListener("click", submitBtn);
 
 function showWeather(response) {
-
-
-  let temperature = Math.round(response.data.main.temp);
+ let temperature = Math.round(response.data.main.temp);
   let description = response.data.weather[0].description;
   let temperatureDescription = document.querySelector(".description");
   let temperatureElement = document.querySelector("h5");
@@ -77,4 +72,3 @@ function showWeather(response) {
   );
 }
 search("London");
-showForecast();
