@@ -18,7 +18,7 @@ function showForecast(response) {
   <div class="card-body">
   <h6 class="card-title">${forecast.dt}</h6>
   <p class="temp">${forecast.temp}°C</p>
-  <img src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png/>"
+  <img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png/>"
   alt=""
   width="50"/>
     </div>
