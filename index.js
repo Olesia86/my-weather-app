@@ -13,12 +13,12 @@ function showForecast(response) {
   let forecast = response.data.main;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay) {
+  forecast.forEach(function(forecastDay) {
   forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
-  <h6 class="card-title">${forecast.dt}</h6>
-  <p class="temp">${forecast.temp}°C</p>
+  <h6 class="card-title">${forecastDay.dt}</h6>
+  <p class="temp">${forcastDay.temp}°C</p>
   <img src="https://openweathermap.org/img/wn/${response.main.weather[0].icon}@2x.png/>"
   alt=""
   width="50"/>
