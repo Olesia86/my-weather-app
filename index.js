@@ -9,6 +9,7 @@ let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
 
 function showForecast(response) {
+  console.log(response.data);
   let forecast = response.data.main;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -32,7 +33,7 @@ function getForecast(coordinates) {
   let apiKey = "49299905f177ecc5c9f1da6f89238e56"
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);
-  console.log(apiUrl);
+  console.log(coordinates);
  }
 
  function submitBtn(event) {
