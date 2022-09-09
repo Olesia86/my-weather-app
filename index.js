@@ -17,7 +17,7 @@ function showForecast(response) {
   <div class="col-2">
   <div class="card-body">
   <h6 class="card-title">${forecastDay.dt}</h6>
-  <p class="temp">${forcastDay.temp}°C</p>
+  <p class="temp">${forecastDay.temp}°C</p>
   <img src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png/>"
   alt=""
   width="50"/>
