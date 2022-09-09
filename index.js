@@ -9,7 +9,7 @@ let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
 
 function showForecast(response) {
-  let forecast = response.main.hourly;
+  let forecast = response.data.main;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay) {
