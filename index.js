@@ -14,17 +14,19 @@ function showForecast(response) {
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6)
-    forecastHTML = forecastHTML + `
+      forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
   <h6 class="card-title">${forecastDay.dt}</h6>
   <p class="temp">${forecastDay.temp}°C</p>
-  <img src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png/>"
+  <img src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png/>
   alt=""
   width="50"/>
     </div>
     </div>`;
+  
   });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
