@@ -71,4 +71,3 @@ function showWeather(response) {
   getForecast(response.data.coord);
 }
 search("London");
-showForecast();
