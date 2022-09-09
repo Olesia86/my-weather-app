@@ -13,7 +13,7 @@ function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay) {
-    forecastHTML = forecastHTML + `
+  forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
   <h6 class="card-title">${forecast.dt}</h6>
