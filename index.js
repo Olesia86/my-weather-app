@@ -13,7 +13,7 @@ function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6)
+    if (index < 6) {
       forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
@@ -24,7 +24,7 @@ function showForecast(response) {
   width="50"/>
     </div>
     </div>`;
-  
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
