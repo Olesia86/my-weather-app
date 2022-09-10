@@ -101,6 +101,9 @@ width: 4rem;
 font-size: 18px;
 outline: none;
 }
+button:focus {
+  outline: none;
+}
 #glass {
   color: black;
   outline: none;
