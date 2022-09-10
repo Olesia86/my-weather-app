@@ -104,18 +104,23 @@ outline: none;
 button:focus {
   outline: none;
 }
-#glass {
-  color: black;
-  outline: none;
-  font-size: 20px;
-}
 button:hover {
   opacity: 0.9;
   box-shadow: 0 5px 15px;
   color: black;
 }
+#glass {
+  color: black;
+  outline: none;
+  font-size: 20px;
+}
+#glass:hover {
+  color: black;
+  box-shadow: 0 5px 15px;
+  opacity: 0.9;
+  
+}
 .search-bar {
-
 border-radius: 18px;
 padding: 0.7rem;
 border: none;
