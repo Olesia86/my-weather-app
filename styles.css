@@ -93,11 +93,10 @@ padding: 0;
   justify-content: space-between;  
 }
 button {
-
 border-radius: 10px;
 border: none;
 padding-top: 7px;
-margin-right: 350px;
+margin-right: 380px;
 width: 4rem;
 font-size: 18px;
 outline: none;
