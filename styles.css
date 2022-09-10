@@ -101,10 +101,12 @@ margin-right: 300px;
 width: 4rem;
 font-size: 18px;
 outline: none;
+
 }
 button:hover {
   opacity: 0.9;
   box-shadow: 0 5px 15px;
+  color: black;
 }
 .search-bar {
 
