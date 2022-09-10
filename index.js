@@ -8,6 +8,14 @@ let months = ["January", "Febriary", "March", "April", "May", "June", "July", "A
 let month = months[now.getMonth()];
 h3.innerHTML = `${day} ${date} ${month}, ${year}`;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+  return days[day];
+}
+
 function showForecast(response) {
   console.log(showForecast);
   let forecast = response.data.daily;
@@ -18,8 +26,8 @@ function showForecast(response) {
       forecastHTML = forecastHTML + `
   <div class="col-2">
   <div class="card-body">
-  <h6 class="card-title">${forecastDay.dt}</h6>
-  <p class="temp">${forecastDay.temp}°C</p>
+  <h6 class="card-title">${formatDay(forecastDay.dt)}</h6>
+  <p class="temp">${Math.round(forecastDay.temp)}°C</p>
   <img src= "https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png/>
   alt=""
   width="50"/>
