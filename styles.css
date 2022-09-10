@@ -114,13 +114,7 @@ button:hover {
   outline: none;
   font-size: 20px;
 }
-#glass:hover {
-  color: black;
-  border: none;
-  opacity: 0.9;
-  box-shadow: 0 5px 15px;
-  }
-  
+
 .search-bar {
 border-radius: 18px;
 padding: 0.7rem;
