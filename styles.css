@@ -93,11 +93,11 @@ padding: 0;
   justify-content: space-between;  
 }
 button {
-  display: inline-block;
+
 border-radius: 10px;
 border: none;
 padding-top: 7px;
-margin-right: 550px;
+
 width: 4rem;
 font-size: 18px;
 outline: none;
@@ -107,6 +107,7 @@ button:hover {
   box-shadow: 0 5px 15px;
 }
 .search-bar {
+
 border-radius: 18px;
 padding: 0.7rem;
 border: none;
