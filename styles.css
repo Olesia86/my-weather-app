@@ -1,6 +1,6 @@
 .container {
   max-width: 700px;
-  height: 585px;
+  height: 590px;
   margin: 0 auto;
   padding: 0 auto;
   border: none;
@@ -27,7 +27,7 @@
  .card-body:hover {
   opacity: 0.9;
   box-shadow: 0 5px 15px;
-  color: rgb(166, 162, 162);
+  color: rgb(201, 196, 196);
  }
 
 .temp {
