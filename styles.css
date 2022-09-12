@@ -148,8 +148,10 @@ h3 {
   left: 70px;
   bottom: 13px;
 }
+.days {
+  font-size: 18px;
+}
 .days:hover {
 color: rgb(14, 14, 14);
-
 }
 
