@@ -148,7 +148,9 @@ h3 {
   left: 70px;
   bottom: 13px;
 }
-#forecast {
-
+.days:hover {
+  opacity: 0.9;
+  box-shadow: 0 5px 15px;
+  color: darkgrey;
 }
 
