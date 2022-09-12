@@ -24,6 +24,11 @@
   color: rgba(10, 0, 0, 0.488);
   margin-left: -10px;
  }
+ .row:hover {
+  opacity: 0.9;
+  box-shadow: 0 5px 15px;
+  color: rgb(166, 162, 162);
+ }
 
 .temp {
   position: relative;
