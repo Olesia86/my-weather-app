@@ -150,5 +150,7 @@ h3 {
 }
 .days:hover {
 color: darkgrey;
+font-size: 25px;
+
 }
 
