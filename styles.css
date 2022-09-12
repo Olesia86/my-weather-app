@@ -151,4 +151,8 @@ h3 {
 .days:hover {
 color: rgb(14, 14, 14);
 }
+.card-body {
+  border: none;
+  height: 10rem;
+}
 
