@@ -25,7 +25,14 @@
  }
  
 
-.temp {
+.temp-max {
+  position: relative;
+  left: 10px;
+  bottom: 15px;
+  color: white;
+  font-size: 14px;
+}
+.temp-min {
   position: relative;
   left: 10px;
   bottom: 15px;
