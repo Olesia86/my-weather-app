@@ -26,7 +26,8 @@ function showForecast(response) {
   <div class="col-2">
   <div class="card-body">
   <h6 class="card-title">${formatDay(forecastDay.dt)}</h6>
-  <p class="temp">${Math.round(forecastDay.temp.day)}°C</p>
+  <p class="temp-max">${Math.round(forecastDay.temp.max)}°C</p>
+  <p class="temp-min">${Math.round(forecastDay.temp.min)}°C</p>
   <img src= "https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
   alt=""
   width="50"/>
