@@ -137,11 +137,7 @@ h1 {
   line-height: 1;
   margin: 0;
 } 
-.units {
-  position: relative;
-  left: 590px;
-  bottom: 140px;
-}
+
 h2 {
   font-size: 36px;
   padding-left: 40px;
@@ -152,5 +148,7 @@ h3 {
   left: 70px;
   bottom: 13px;
 }
+#forecast {
 
+}
 
