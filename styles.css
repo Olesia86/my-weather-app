@@ -149,8 +149,6 @@ h3 {
   bottom: 13px;
 }
 .days:hover {
-  opacity: 0.9;
-  box-shadow: 0 5px 15px;
-  color: darkgrey;
+color: darkgrey;
 }
 
