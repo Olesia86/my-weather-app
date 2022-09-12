@@ -17,25 +17,20 @@
 .card-title {
   color: rgb(24, 23, 23);
   font-size: 18px;
+  }
   
-}
-
-.card-text {
-  font-size: 8px;
-  color: rgb(251, 249, 249);
-
-}
-
 .row {
   display: flex;
   color: rgba(10, 0, 0, 0.488);
   margin-left: -10px;
  }
+
 .temp {
   position: relative;
   left: 10px;
   bottom: 15px;
-  color: rgb(238, 234, 234);
+  color: rgb(23, 22, 22);
+  font-size: 14px;
 }
 img {
   position: relative;
