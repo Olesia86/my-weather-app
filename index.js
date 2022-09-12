@@ -29,7 +29,7 @@ function showForecast(response) {
   <p class="temp">${Math.round(forecastDay.temp)}°C</p>
   <img src= "https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
   alt=""
-  width="100"/>
+  width="50"/>
     </div>
     </div>`;
     }
