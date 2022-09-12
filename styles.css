@@ -152,6 +152,7 @@ color: rgb(14, 14, 14);
 .card-body {
   border: none;
   height: 8rem;
+  width: 5.5rem;
 
 }
 .card-body:hover {
